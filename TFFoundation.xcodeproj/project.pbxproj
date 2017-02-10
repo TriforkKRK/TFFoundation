@@ -10,6 +10,7 @@
 		2E7D0ACD1E4E4013008544D1 /* TFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7D0AC31E4E4013008544D1 /* TFFoundation.framework */; };
 		2E7D0AD21E4E4013008544D1 /* TFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */; };
 		2E7D0AD41E4E4013008544D1 /* TFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7D0AC61E4E4013008544D1 /* TFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0ADE1E4E4099008544D1 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2E7D0ACC1E4E4013008544D1 /* TFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFFoundationTests.swift; sourceTree = "<group>"; };
 		2E7D0AD31E4E4013008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7D0ADE1E4E4099008544D1 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		2E7D0AC51E4E4013008544D1 /* TFFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D0ADD1E4E4099008544D1 /* Base */,
 				2E7D0AC61E4E4013008544D1 /* TFFoundation.h */,
 				2E7D0AC71E4E4013008544D1 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				2E7D0AD31E4E4013008544D1 /* Info.plist */,
 			);
 			path = TFFoundationTests;
+			sourceTree = "<group>";
+		};
+		2E7D0ADD1E4E4099008544D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2E7D0ADE1E4E4099008544D1 /* Result.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +367,7 @@
 		2E7D0ADB1E4E4013008544D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFFoundationTests;
@@ -366,6 +379,7 @@
 		2E7D0ADC1E4E4013008544D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = TFFoundationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.TFFoundationTests;
@@ -393,6 +407,7 @@
 				2E7D0AD91E4E4013008544D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E7D0ADA1E4E4013008544D1 /* Build configuration list for PBXNativeTarget "TFFoundationTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +416,7 @@
 				2E7D0ADC1E4E4013008544D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
