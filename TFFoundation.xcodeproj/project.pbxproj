@@ -12,6 +12,7 @@
 		2E7D0AD41E4E4013008544D1 /* TFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7D0AC61E4E4013008544D1 /* TFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0ADE1E4E4099008544D1 /* Result.swift */; };
 		2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */; };
+		2E7D0AE41E4E415A008544D1 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		2E7D0AD31E4E4013008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7D0ADE1E4E4099008544D1 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Synchronized.swift"; sourceTree = "<group>"; };
+		2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		2E7D0AE01E4E4115008544D1 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */,
 				2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */,
 			);
 			path = Concurrency;
@@ -219,6 +222,7 @@
 			files = (
 				2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */,
 				2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */,
+				2E7D0AE41E4E415A008544D1 /* AsynchronousOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
