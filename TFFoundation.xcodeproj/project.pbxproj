@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3CF6C01E4F181800747697 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CF6BF1E4F181800747697 /* HTTPStatusCode.swift */; };
 		2E7D0ACD1E4E4013008544D1 /* TFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7D0AC31E4E4013008544D1 /* TFFoundation.framework */; };
 		2E7D0AD21E4E4013008544D1 /* TFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */; };
 		2E7D0AD41E4E4013008544D1 /* TFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7D0AC61E4E4013008544D1 /* TFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3CF6BF1E4F181800747697 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		2E7D0AC31E4E4013008544D1 /* TFFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7D0AC61E4E4013008544D1 /* TFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFFoundation.h; sourceTree = "<group>"; };
 		2E7D0AC71E4E4013008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E3CF6BE1E4F181800747697 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E3CF6BF1E4F181800747697 /* HTTPStatusCode.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		2E7D0AB91E4E4013008544D1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 			children = (
 				2E7D0ADD1E4E4099008544D1 /* Base */,
 				2E7D0AE01E4E4115008544D1 /* Concurrency */,
+				2E3CF6BE1E4F181800747697 /* Network */,
 				2E7D0AE51E4E419C008544D1 /* Runtime */,
 				2E7D0AC61E4E4013008544D1 /* TFFoundation.h */,
 				2E7D0AC71E4E4013008544D1 /* Info.plist */,
@@ -231,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3CF6C01E4F181800747697 /* HTTPStatusCode.swift in Sources */,
 				2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */,
 				2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */,
 				2E7D0AE71E4E419C008544D1 /* ObjectAssociation.swift in Sources */,
