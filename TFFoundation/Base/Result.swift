@@ -26,10 +26,8 @@ import Foundation
 
 /// An outcome of an action that can either succeed with a `ResultType` value or fail with an error.
 public enum Result<ResultType> {
-    
     case success(ResultType)
     case failure(Error)
 }
-
 
 public typealias EmptyResult = Result<Void>

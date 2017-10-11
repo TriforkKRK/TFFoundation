@@ -27,14 +27,12 @@ import UIKit
 
 /// Types that conform to the DataConverterter protocol can convert Data to any TargetType.
 public protocol DataConverterter {
-    
     associatedtype TargetType
     static func makeInstance(from data: Data) throws -> TargetType
 }
 
 /// Noop converter. Returns unaltered Data.
 public struct DataToDataConverter: DataConverterter {
-    
     public static func makeInstance(from data: Data) -> Data { return data }
 }
 
@@ -44,7 +42,6 @@ public struct DataToUTF8StringConverter: DataConverterter {
     enum ConversionError: Error { case initializationFailed }
     
     public static func makeInstance(from data: Data) throws -> String {
-        
         guard let string = String(data: data, encoding: .utf8) else { throw ConversionError.initializationFailed }
         return string
     }
@@ -56,7 +53,6 @@ public struct DataToImageConverter: DataConverterter {
     enum ConversionError: Error { case initializationFailed }
     
     public static func makeInstance(from data: Data) throws -> UIImage {
-        
         guard let image = UIImage(data: data, scale: UIScreen.main.scale) else { throw ConversionError.initializationFailed }
         return image
     }

@@ -30,7 +30,6 @@ public extension NSObject {
     /// - Parameter closure: A closure to be executed within a critical section.
     /// - Returns: The value returned from `closure`.
     public final func synchronized<T>(_ closure: () -> T) -> T {
-        
         objc_sync_enter(self)
         let result = closure()
         objc_sync_exit(self)
