@@ -202,11 +202,8 @@ public enum HTTPStatusCode: RawRepresentable {
     }
 }
 
-
 extension HTTPStatusCode: Equatable {
-
     public static func ==(lhs: HTTPStatusCode, rhs: HTTPStatusCode) -> Bool {
-
         return lhs.rawValue == rhs.rawValue
     }
 }

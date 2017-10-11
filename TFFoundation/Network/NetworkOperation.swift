@@ -38,16 +38,13 @@ public class NetworkOperation<Converter : DataConverterter>: AsynchronousOperati
     private var requestResult: Result<Converter.TargetType>!
     
     public init(request: URLRequest, scheduler: NetworkRequestScheduler, acceptableStatusCodes: [HTTPStatusCode] = [.ok]) {
-        
         self.request = request
         self.scheduler = scheduler
         self.acceptableStatusCodes = acceptableStatusCodes
     }
     
     public override func didStart() {
-        
         scheduler.schedule(request, with: queuePriority) { (result, response) -> Void in
-            
             defer { self.markFinished() }
             
             switch result {
@@ -61,13 +58,11 @@ public class NetworkOperation<Converter : DataConverterter>: AsynchronousOperati
                 let statusCode = HTTPStatusCode(rawValue: HTTPResponse.statusCode)
                 
                 guard self.acceptableStatusCodes.contains(statusCode) else {
-                    
                     self.requestResult = .failure(NetworkOperationError.unacceptableStatusCode(statusCode))
                     return
                 }
                 
                 do {
-                    
                     let object = try Converter.makeInstance(from: data)
                     self.requestResult = .success(object)
                 }
@@ -80,7 +75,6 @@ public class NetworkOperation<Converter : DataConverterter>: AsynchronousOperati
 }
 
 public protocol NetworkRequestScheduler {
-    
     func schedule(_ request: URLRequest, with priority: Operation.QueuePriority, completionHandler: @escaping (Result<Data>, URLResponse?) -> Void)
 }
 
@@ -91,10 +85,8 @@ public enum NetworkOperationError: Error, CustomStringConvertible {
     case unacceptableStatusCode(HTTPStatusCode)
     
     public var description: String {
-        
         let description = String(describing: NetworkOperationError.self) + "."
         switch self {
-            
         case .cancelled: return description + "cancelled"
         case .unacceptableStatusCode(let statusCode): return description + "InvalidStatusCode(\(statusCode))"
         }

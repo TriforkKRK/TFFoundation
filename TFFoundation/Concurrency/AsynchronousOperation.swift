@@ -28,29 +28,23 @@ import Foundation
 open class AsynchronousOperation: Operation {
     
     private enum State {
-        
         case idle
         case executing
         case finished
     }
     
     private var state: State = .idle {
-        
         willSet {
-            
             willChangeValue(forKey: "isExecuting")
             willChangeValue(forKey: "isFinished")
         }
-        
         didSet {
-            
             didChangeValue(forKey: "isFinished")
             didChangeValue(forKey: "isExecuting")
         }
     }
     
     private var stateSynchronized: State {
-        
         get { return synchronized { self.state } }
         set { synchronized { self.state = newValue } }
     }
@@ -60,9 +54,7 @@ open class AsynchronousOperation: Operation {
     override public final var isAsynchronous: Bool { return true }
     
     override public final func start() {
-        
         guard isCancelled == false else {
-            
             markFinished()
             return
         }
@@ -73,7 +65,6 @@ open class AsynchronousOperation: Operation {
     
     /// To be overridden in subclasses, invoked after operation is successfully started.
     open func didStart() {
-        
         fatalError("Template method. Must be overriden")
     }
     
