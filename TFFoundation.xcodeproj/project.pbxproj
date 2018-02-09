@@ -16,6 +16,7 @@
 		2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */; };
 		2E7D0AE41E4E415A008544D1 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */; };
 		2E7D0AE71E4E419C008544D1 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */; };
+		2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Synchronized.swift"; sourceTree = "<group>"; };
 		2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 		2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		2E7D0AD01E4E4013008544D1 /* TFFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				2EC9A7A7202E1E900033DF4C /* Runtime */,
 				2E7D0AD31E4E4013008544D1 /* Info.plist */,
 			);
 			path = TFFoundationTests;
@@ -132,6 +135,14 @@
 			isa = PBXGroup;
 			children = (
 				2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		2EC9A7A7202E1E900033DF4C /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
