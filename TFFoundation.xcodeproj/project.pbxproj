@@ -11,7 +11,6 @@
 		2E3CF6C61E4F18E100747697 /* DataConverters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CF6C41E4F18E100747697 /* DataConverters.swift */; };
 		2E3CF6C71E4F18E100747697 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CF6C51E4F18E100747697 /* NetworkOperation.swift */; };
 		2E7D0ACD1E4E4013008544D1 /* TFFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7D0AC31E4E4013008544D1 /* TFFoundation.framework */; };
-		2E7D0AD21E4E4013008544D1 /* TFFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */; };
 		2E7D0AD41E4E4013008544D1 /* TFFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E7D0AC61E4E4013008544D1 /* TFFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0ADE1E4E4099008544D1 /* Result.swift */; };
 		2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */; };
@@ -37,7 +36,6 @@
 		2E7D0AC61E4E4013008544D1 /* TFFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFFoundation.h; sourceTree = "<group>"; };
 		2E7D0AC71E4E4013008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7D0ACC1E4E4013008544D1 /* TFFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFFoundationTests.swift; sourceTree = "<group>"; };
 		2E7D0AD31E4E4013008544D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7D0ADE1E4E4099008544D1 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Synchronized.swift"; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		2E7D0AD01E4E4013008544D1 /* TFFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
-				2E7D0AD11E4E4013008544D1 /* TFFoundationTests.swift */,
 				2E7D0AD31E4E4013008544D1 /* Info.plist */,
 			);
 			path = TFFoundationTests;
@@ -264,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7D0AD21E4E4013008544D1 /* TFFoundationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
