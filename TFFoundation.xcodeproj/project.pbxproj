@@ -18,6 +18,7 @@
 		2E7D0AE71E4E419C008544D1 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */; };
 		2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */; };
 		2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */; };
+		2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
 		2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
 		2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationTests.swift; sourceTree = "<group>"; };
+		2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+SynchronizedTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */,
+				2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */,
+				2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */,
 				2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
