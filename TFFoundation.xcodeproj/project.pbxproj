@@ -19,6 +19,7 @@
 		2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */; };
 		2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */; };
 		2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */; };
+		2EC9A7B1202F35050033DF4C /* DataConvertersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7B0202F35050033DF4C /* DataConvertersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
 		2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationTests.swift; sourceTree = "<group>"; };
 		2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+SynchronizedTests.swift"; sourceTree = "<group>"; };
+		2EC9A7B0202F35050033DF4C /* DataConvertersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertersTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC9A7AA202EF1E30033DF4C /* Concurrency */,
+				2EC9A7AF202F34EE0033DF4C /* Network */,
 				2EC9A7A7202E1E900033DF4C /* Runtime */,
 				2E7D0AD31E4E4013008544D1 /* Info.plist */,
 			);
@@ -159,6 +162,14 @@
 				2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */,
 			);
 			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		2EC9A7AF202F34EE0033DF4C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EC9A7B0202F35050033DF4C /* DataConvertersTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC9A7B1202F35050033DF4C /* DataConvertersTests.swift in Sources */,
 				2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */,
 				2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */,
 				2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */,
