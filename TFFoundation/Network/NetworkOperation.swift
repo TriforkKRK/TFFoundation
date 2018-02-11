@@ -88,7 +88,7 @@ public enum NetworkOperationError: Error, CustomStringConvertible {
         let description = String(describing: NetworkOperationError.self) + "."
         switch self {
         case .cancelled: return description + "cancelled"
-        case .unacceptableStatusCode(let statusCode): return description + "InvalidStatusCode(\(statusCode))"
+        case .unacceptableStatusCode(let statusCode): return description + "unacceptableStatusCode(\(statusCode))"
         }
     }
 }
