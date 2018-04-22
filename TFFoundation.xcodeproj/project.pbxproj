@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E14DD1A20827E97006478E6 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14DD1920827E97006478E6 /* Dictionary.swift */; };
+		2E14DD1D2082831B006478E6 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14DD1C2082831B006478E6 /* DictionaryTests.swift */; };
 		2E1B01BE202F41D600CC726D /* HTTPStatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B01BD202F41D600CC726D /* HTTPStatusCodeTests.swift */; };
 		2E1B01C0202F45D400CC726D /* NetworkOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B01BF202F45D400CC726D /* NetworkOperationTests.swift */; };
 		2E3CF6C01E4F181800747697 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3CF6BF1E4F181800747697 /* HTTPStatusCode.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E14DD1920827E97006478E6 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		2E14DD1C2082831B006478E6 /* DictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		2E1B01BD202F41D600CC726D /* HTTPStatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodeTests.swift; sourceTree = "<group>"; };
 		2E1B01BF202F45D400CC726D /* NetworkOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperationTests.swift; sourceTree = "<group>"; };
 		2E3CF6BF1E4F181800747697 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E14DD1B2082824E006478E6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2E14DD1C2082831B006478E6 /* DictionaryTests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		2E3CF6BE1E4F181800747697 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		2E7D0AD01E4E4013008544D1 /* TFFoundationTests */ = {
 			isa = PBXGroup;
 			children = (
+				2E14DD1B2082824E006478E6 /* Base */,
 				2EC9A7AA202EF1E30033DF4C /* Concurrency */,
 				2EC9A7AF202F34EE0033DF4C /* Network */,
 				2EC9A7A7202E1E900033DF4C /* Runtime */,
@@ -130,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7D0ADE1E4E4099008544D1 /* Result.swift */,
+				2E14DD1920827E97006478E6 /* Dictionary.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -290,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3CF6C01E4F181800747697 /* HTTPStatusCode.swift in Sources */,
+				2E14DD1A20827E97006478E6 /* Dictionary.swift in Sources */,
 				2E7D0ADF1E4E4099008544D1 /* Result.swift in Sources */,
 				2E3CF6C61E4F18E100747697 /* DataConverters.swift in Sources */,
 				2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */,
@@ -305,6 +320,7 @@
 			files = (
 				2EC9A7B1202F35050033DF4C /* DataConvertersTests.swift in Sources */,
 				2E1B01BE202F41D600CC726D /* HTTPStatusCodeTests.swift in Sources */,
+				2E14DD1D2082831B006478E6 /* DictionaryTests.swift in Sources */,
 				2E1B01C0202F45D400CC726D /* NetworkOperationTests.swift in Sources */,
 				2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */,
 				2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */,
