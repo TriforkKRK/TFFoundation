@@ -20,6 +20,8 @@
 		2E7D0AE21E4E4115008544D1 /* NSObject+Synchronized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */; };
 		2E7D0AE41E4E415A008544D1 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */; };
 		2E7D0AE71E4E419C008544D1 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */; };
+		2E848BA021CFE132005F432C /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E848B9F21CFE132005F432C /* Sequence.swift */; };
+		2E848BA221CFFFEE005F432C /* SequenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E848BA121CFFFEE005F432C /* SequenceTests.swift */; };
 		2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */; };
 		2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */; };
 		2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */; };
@@ -55,6 +57,8 @@
 		2E7D0AE11E4E4115008544D1 /* NSObject+Synchronized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Synchronized.swift"; sourceTree = "<group>"; };
 		2E7D0AE31E4E415A008544D1 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 		2E7D0AE61E4E419C008544D1 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		2E848B9F21CFE132005F432C /* Sequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		2E848BA121CFFFEE005F432C /* SequenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceTests.swift; sourceTree = "<group>"; };
 		2EC9A7A8202E1E900033DF4C /* ObjectAssociationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociationTests.swift; sourceTree = "<group>"; };
 		2EC9A7AB202EF1F20033DF4C /* AsynchronousOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperationTests.swift; sourceTree = "<group>"; };
 		2EC9A7AD202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+SynchronizedTests.swift"; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			children = (
 				2E14DD1C2082831B006478E6 /* DictionaryTests.swift */,
 				2EEA734E208CBFC5009C5696 /* OperationQueueTests.swift */,
+				2E848BA121CFFFEE005F432C /* SequenceTests.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				2E7D0ADE1E4E4099008544D1 /* Result.swift */,
 				2E14DD1920827E97006478E6 /* Dictionary.swift */,
 				2EEA734C208CBEC7009C5696 /* OperationQueue.swift */,
+				2E848B9F21CFE132005F432C /* Sequence.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				2E7D0AE71E4E419C008544D1 /* ObjectAssociation.swift in Sources */,
 				2E7D0AE41E4E415A008544D1 /* AsynchronousOperation.swift in Sources */,
 				2EEA734D208CBEC7009C5696 /* OperationQueue.swift in Sources */,
+				2E848BA021CFE132005F432C /* Sequence.swift in Sources */,
 				2E3CF6C71E4F18E100747697 /* NetworkOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +337,7 @@
 				2E14DD1D2082831B006478E6 /* DictionaryTests.swift in Sources */,
 				2E1B01C0202F45D400CC726D /* NetworkOperationTests.swift in Sources */,
 				2EC9A7AC202EF1F20033DF4C /* AsynchronousOperationTests.swift in Sources */,
+				2E848BA221CFFFEE005F432C /* SequenceTests.swift in Sources */,
 				2EEA734F208CBFC5009C5696 /* OperationQueueTests.swift in Sources */,
 				2EC9A7AE202F2EFF0033DF4C /* NSObject+SynchronizedTests.swift in Sources */,
 				2EC9A7A9202E1E900033DF4C /* ObjectAssociationTests.swift in Sources */,
