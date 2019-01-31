@@ -41,18 +41,7 @@ class SequenceTests: XCTestCase {
         XCTAssertEqual(1, twoElements.count(where: { $0 == 2 }))
         XCTAssertEqual(0, twoElements.count(where: { $0 == 3 }))
     }
-    
-    func testAnySatisfy() {
-        XCTAssertFalse(empty.anySatisfy { $0 == 1 })
         
-        XCTAssertTrue(oneElement.anySatisfy { $0 == 1 })
-        XCTAssertFalse(oneElement.anySatisfy { $0 == 2 })
-        
-        XCTAssertTrue(twoElements.anySatisfy { $0 == 1 })
-        XCTAssertTrue(twoElements.anySatisfy { $0 == 2 })
-        XCTAssertFalse(twoElements.anySatisfy { $0 == 3 })
-    }
-    
     func testReject() {
         XCTAssertEqual([], empty.reject { $0 == 1 })
         

@@ -31,14 +31,7 @@ extension Sequence {
             if try predicate(element) { count += 1 }
         })
     }
-    
-    func anySatisfy(_ predicate: (Self.Element) throws -> Bool) rethrows -> Bool {
-        for element in self {
-            if try predicate(element) { return true }
-        }
-        return false
-    }
-    
+        
     func reject(_ isExcluded: (Self.Element) throws -> Bool) rethrows -> [Self.Element] {
         return try filter { try !isExcluded($0) }
     }
