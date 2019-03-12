@@ -26,43 +26,39 @@ import XCTest
 @testable import TFFoundation
 
 class SequenceTests: XCTestCase {
-    
-    let empty = [Int]()
-    let oneElement = [1]
-    let twoElements = [1, 2]
-    
+        
     func testCountWhere() {
-        XCTAssertEqual(0, empty.count(where: { $0 == 1 }))
+        XCTAssertEqual(0, [Int]().count(where: { $0 == 1 }))
         
-        XCTAssertEqual(1, oneElement.count(where: { $0 == 1 }))
-        XCTAssertEqual(0, oneElement.count(where: { $0 == 2 }))
+        XCTAssertEqual(1, [1].count(where: { $0 == 1 }))
+        XCTAssertEqual(0, [1].count(where: { $0 == 2 }))
         
-        XCTAssertEqual(1, twoElements.count(where: { $0 == 1 }))
-        XCTAssertEqual(1, twoElements.count(where: { $0 == 2 }))
-        XCTAssertEqual(0, twoElements.count(where: { $0 == 3 }))
+        XCTAssertEqual(1, [1, 2].count(where: { $0 == 1 }))
+        XCTAssertEqual(1, [1, 2].count(where: { $0 == 2 }))
+        XCTAssertEqual(0, [1, 2].count(where: { $0 == 3 }))
     }
         
     func testReject() {
-        XCTAssertEqual([], empty.reject { $0 == 1 })
+        XCTAssertEqual([], [Int]().reject { $0 == 1 })
         
-        XCTAssertEqual([], oneElement.reject { $0 == 1 })
-        XCTAssertEqual([1], oneElement.reject { $0 == 2 })
+        XCTAssertEqual([], [1].reject { $0 == 1 })
+        XCTAssertEqual([1], [1].reject { $0 == 2 })
         
-        XCTAssertEqual([2], twoElements.reject { $0 == 1 })
-        XCTAssertEqual([1], twoElements.reject { $0 == 2 })
-        XCTAssertEqual([1, 2], twoElements.reject { $0 == 3 })
+        XCTAssertEqual([2], [1, 2].reject { $0 == 1 })
+        XCTAssertEqual([1], [1, 2].reject { $0 == 2 })
+        XCTAssertEqual([1, 2], [1, 2].reject { $0 == 3 })
     }
     
     func testReduce() {
-        XCTAssertEqual(nil, empty.reduce { $0 += $1 })
-        XCTAssertEqual(1, oneElement.reduce { $0 += $1 })
-        XCTAssertEqual(3, twoElements.reduce { $0 += $1 })
+        XCTAssertEqual(nil, [Int]().reduce { $0 += $1 })
+        XCTAssertEqual(1, [1].reduce { $0 += $1 })
+        XCTAssertEqual(3, [1, 2].reduce { $0 += $1 })
     }
     
     func testUnique() {
-        XCTAssertEqual([], empty.unique())
-        XCTAssertEqual([1], oneElement.unique())
-        XCTAssertEqual([1, 2], twoElements.unique())
+        XCTAssertEqual([], [Int]().unique())
+        XCTAssertEqual([1], [1].unique())
+        XCTAssertEqual([1, 2], [1, 2].unique())
         
         let actual = [3, 1, 2, 1, 3, 2, 4, 4].unique()
         let expected = [3, 1, 2, 4]
