@@ -31,3 +31,9 @@ public enum Result<ResultType> {
 }
 
 public typealias EmptyResult = Result<Void>
+
+extension Result where ResultType == Void {
+    public static var success: EmptyResult {
+        return .success(())
+    }
+}
