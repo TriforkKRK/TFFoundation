@@ -44,30 +44,76 @@ open class AsynchronousOperation: Operation {
         }
     }
     
-    private var stateSynchronized: State {
-        get { return synchronized { self.state } }
-        set { synchronized { self.state = newValue } }
-    }
-    
-    override public final var isExecuting: Bool { return stateSynchronized == .executing }
-    override public final var isFinished: Bool { return stateSynchronized == .finished }
+    override public final var isExecuting: Bool { synchronized { state == .executing } }
+    override public final var isFinished: Bool { synchronized { state == .finished } }
     override public final var isAsynchronous: Bool { return true }
     
     override public final func start() {
-        guard isCancelled == false else {
-            markFinished()
+        // An operation that was cancelled before its execution started cannot immediately move into finished state
+        // Instead, it has to be marked as finished as soon as it is started
+        let isCancelledBeforeStart = !synchronized { beginStart() }
+        guard !isCancelledBeforeStart else {
             return
         }
-
-        stateSynchronized = .executing
         didStart()
+        // In order to guarantee didStart()/didCancel() invocation order, do not transition into executing state until after didStart() returns
+        // As a result, if the operation is cancelled during didStart(), didCancel() is not invoked as a part of the regular cancellation flow
+        let isStartCancelled = !synchronized { completeStart() }
+        if isStartCancelled {
+            didCancel()
+        }
+    }
+    
+    override public final func cancel() {
+        let cancelState = synchronized { doCancel() }
+        // See start() implementation for explanation why didCancel() isn't always executed here
+        if cancelState == .executing {
+            didCancel()
+        }
     }
     
     /// To be overridden in subclasses, invoked after operation is successfully started.
+    ///
+    /// - Note: May not be invoked at all if the operation was cancelled early.
     open func didStart() {
+        fatalError("Template method. Must be overriden")
+    }
+
+    /// To be overridden in subclasses, invoked at most once after the operation is cancelled.
+    ///
+    /// - Note: If `didStart()` was invoked, this is guaranteed to be invoked after that.
+    open func didCancel() {
         fatalError("Template method. Must be overriden")
     }
     
     /// Called to mark execution as finished.
-    public final func markFinished() { stateSynchronized = .finished }
+    public final func markFinished() {
+        synchronized { state = .finished }
+    }
+    
+    private func beginStart() -> Bool {
+        if isCancelled {
+            state = .finished
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    private func completeStart() -> Bool {
+        guard !isCancelled else {
+            return false
+        }
+        // Check if the operation hasn't been marked as finished on startup
+        if state == .idle {
+            state = .executing
+        }
+        return true
+    }
+    
+    private func doCancel() -> State? {
+        let isAlreadyCancelled = isCancelled
+        super.cancel()
+        return isAlreadyCancelled ? nil : state
+    }
 }
